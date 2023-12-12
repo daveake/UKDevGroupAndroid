@@ -1,0 +1,59 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 477
+  ClientWidth = 571
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ComboBox1: TComboBox
+    Position.X = 156.000000000000000000
+    Position.Y = 31.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Position.X = 52.000000000000000000
+    Position.Y = 36.000000000000000000
+    Size.Width = 77.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    Text = 'Serial Port:'
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Position.X = 316.000000000000000000
+    Position.Y = 31.000000000000000000
+    TabOrder = 2
+    Text = 'Connect'
+    OnClick = Button1Click
+  end
+  object ListBox1: TListBox
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 16.000000000000000000
+    Position.Y = 76.000000000000000000
+    Size.Width = 541.000000000000000000
+    Size.Height = 385.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 537.000000000000000000
+    Viewport.Height = 381.000000000000000000
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 472
+    Top = 24
+  end
+end

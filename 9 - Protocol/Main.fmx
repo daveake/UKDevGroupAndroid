@@ -1,0 +1,69 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Radio Module Demo'
+  ClientHeight = 557
+  ClientWidth = 443
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 20.000000000000000000
+    Position.Y = 116.000000000000000000
+    Size.Width = 403.000000000000000000
+    Size.Height = 426.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 399.000000000000000000
+    Viewport.Height = 422.000000000000000000
+  end
+  object CheckBox1: TCheckBox
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 28.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 395.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Enable Heartbeat Transmissions'
+  end
+  object Button1: TButton
+    Position.X = 28.000000000000000000
+    Position.Y = 52.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Send:'
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 6
+    MaxLength = 12
+    Text = 'hello'
+    TextSettings.Font.Size = 24.000000000000000000
+    Position.X = 136.000000000000000000
+    Position.Y = 52.000000000000000000
+    Size.Width = 287.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Style, FontColor]
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 404
+    Top = 16
+  end
+  object Timer2: TTimer
+    Interval = 100
+    OnTimer = Timer2Timer
+    Left = 340
+    Top = 16
+  end
+end

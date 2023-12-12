@@ -1,0 +1,108 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Bluetooth Tester'
+  ClientHeight = 664
+  ClientWidth = 349
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 44.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 29.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'List Bluetooth Devices'
+    OnClick = Button1Click
+  end
+  object ListBox1: TListBox
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 81.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 136.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 321.000000000000000000
+    Viewport.Height = 132.000000000000000000
+  end
+  object Button2: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 225.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'List Device Services'
+    OnClick = Button2Click
+  end
+  object ListBox2: TListBox
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 261.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 167.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 321.000000000000000000
+    Viewport.Height = 163.000000000000000000
+  end
+  object Button3: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 436.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Connect To Serial Port'
+    OnClick = Button3Click
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 472.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 184.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Viewport.Width = 321.000000000000000000
+    Viewport.Height = 180.000000000000000000
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 228
+    Top = 564
+  end
+  object Button4: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Get Permission'
+    OnClick = Button4Click
+  end
+  object Bluetooth1: TBluetooth
+    Enabled = False
+    Left = 68
+    Top = 568
+  end
+end

@@ -1,0 +1,76 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Radio Module Demo'
+  ClientHeight = 557
+  ClientWidth = 443
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 20.000000000000000000
+    Position.Y = 15.000000000000000000
+    Size.Width = 403.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Load Radio Module'
+    OnClick = Button1Click
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 20.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 403.000000000000000000
+    Size.Height = 406.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 399.000000000000000000
+    Viewport.Height = 402.000000000000000000
+  end
+  object Button2: TButton
+    Tag = 1
+    Position.X = 20.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 125.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Channel 1'
+    OnClick = Button4Click
+  end
+  object Button3: TButton
+    Tag = 2
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 161.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 125.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Channel 2'
+    OnClick = Button4Click
+  end
+  object Button4: TButton
+    Tag = 3
+    Anchors = [akTop, akRight]
+    Position.X = 298.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 125.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Channel 3'
+    OnClick = Button4Click
+    object FloatAnimation1: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Size.Width'
+      StartValue = 0.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+  end
+end

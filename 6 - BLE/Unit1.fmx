@@ -1,0 +1,113 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Bluetooth Tester'
+  ClientHeight = 664
+  ClientWidth = 349
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 29.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Get Permissions'
+    OnClick = Button1Click
+  end
+  object ListBox1: TListBox
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 81.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 188.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 321.000000000000000000
+    Viewport.Height = 184.000000000000000000
+  end
+  object Button2: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 45.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Scan For Devices'
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 277.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Connect'
+    OnClick = Button3Click
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 388.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 268.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Viewport.Width = 321.000000000000000000
+    Viewport.Height = 264.000000000000000000
+  end
+  object Button4: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 353.000000000000000000
+    Size.Width = 157.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Send'
+    OnClick = Button4Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 10
+    Text = '~F434.500'
+    Position.X = 180.000000000000000000
+    Position.Y = 353.000000000000000000
+    Size.Width = 149.000000000000000000
+    Size.Height = 27.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 9
+    Position.X = 8.000000000000000000
+    Position.Y = 313.000000000000000000
+    Size.Width = 325.000000000000000000
+    Size.Height = 27.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object BluetoothLE1: TBluetoothLE
+    Enabled = False
+    OnCharacteristicRead = BluetoothLE1CharacteristicRead
+    OnCharacteristicWrite = BluetoothLE1CharacteristicWrite
+    OnCharacteristicWriteRequest = BluetoothLE1CharacteristicWriteRequest
+    OnDiscoverLEDevice = BluetoothLE1DiscoverLEDevice
+    OnEndDiscoverServices = BluetoothLE1EndDiscoverServices
+    Left = 128
+    Top = 588
+  end
+end
